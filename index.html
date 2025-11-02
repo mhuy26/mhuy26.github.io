@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>huy</title>
+    <link rel="icon" type="image/png" href="lightDark/nest.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <button class="dark-mode-toggle" id="darkModeToggle">
+            <img src="lightDark/dark.png" alt="Toggle dark mode" id="toggleIcon" />
+        </button>
+        
+        <header>
+            <h1>Huy Nguyen</h1>
+            <p class="subtitle">Data Science Student @ UTD</p>
+        </header>
+
+        <section class="experience">
+            <h2>Experience</h2>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="experience-left">
+                        <img src="images/hsc.png" alt="Ho Chi Minh Securities Corp." class="company-logo">
+                        <div class="experience-text">
+                            <div class="company-row">
+                                <h3>Ho Chi Minh Securities Corp.</h3>
+                                <span class="date">May 2025 - Aug. 2025</span>
+                            </div>
+                            <p class="job-title">Software Engineer Intern</p>
+                        </div>
+                    </div>
+                </div>
+                <ul class="experience-bullets">
+                    <li>Built GenAI support system using query classification, prompt enhancement, and <strong>Qdrant</strong> vector retrieval to serve <strong>10 DevOps engineers</strong>, reducing repetitive tickets by <strong>25%</strong> and saving <strong>2 hours daily</strong>.</li>
+                    <li>Engineered end-to-end <strong>RAG pipeline</strong> with <strong>n8n</strong> workflow orchestration, integrating <strong>Qdrant</strong> similarity search and dynamic <strong>LLM</strong> routing to process <strong>200+ daily queries</strong> at <strong>85% accuracy</strong>.</li>
+                    <li>Deployed system on <strong>Kubernetes</strong> via <strong>Helm</strong> with <strong>Prometheus/Grafana</strong> monitoring and <strong>KEDA</strong> event-driven autoscaling, maintaining <strong>98% uptime</strong> under <strong>3x peak traffic</strong>.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="experience-left">
+                        <img src="images/utd.jpeg" alt="Gu Lab, UTD" class="company-logo">
+                        <div class="experience-text">
+                            <div class="company-row">
+                                <h3>Gu Lab, UTD Department of Neuroscience</h3>
+                                <span class="date">Jan. 2025 - May 2025</span>
+                            </div>
+                            <p class="job-title">Computer Science Research Assistant</p>
+                        </div>
+                    </div>
+                </div>
+                <ul class="experience-bullets">
+                    <li>Automated multimodal data acquisition pipelines with <strong>Bonsai RX</strong>, eliminating <strong>200+ hours</strong> of manual collection with <strong>100% signal synchronization</strong>.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="experience-left">
+                        <img src="images/finbudAI.jpeg" alt="FinBud AI" class="company-logo">
+                        <div class="experience-text">
+                            <div class="company-row">
+                                <h3>FinBud AI</h3>
+                                <span class="date">Dec. 2024 - Oct. 2025</span>
+                            </div>
+                            <p class="job-title">Software Engineer Intern</p>
+                        </div>
+                    </div>
+                </div>
+                <ul class="experience-bullets">
+                    <li>Built <strong>Vue.js/Express</strong> stock screener with <strong>7 server-side filters</strong> (market cap, sector, P/E, dividend, volume) using OR-within/AND-across logic, serving <strong>500+ traders</strong> with real-time validation and CSV export.</li>
+                    <li>Integrated <strong>TradingView Scanner API</strong> with color-coded price cards, KPI aggregations (avg market cap, top sectors), and deep-linked charts for instant analysis.</li>
+                    <li>Optimized performance with <strong>1.2s debounced API calls</strong>, <strong>Redis 5-minute caching</strong>, pagination, and authenticated <strong>REST</strong> endpoints handling large result sets.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <!-- Programming Languages -->
+            <div class="skills-grid programming-languages">
+                <img src="https://skillicons.dev/icons?i=python" alt="Python" title="Python" class="skill-item">
+                <img src="https://skillicons.dev/icons?i=cpp" alt="C++" title="C++" class="skill-item">
+                <img src="https://skillicons.dev/icons?i=r" alt="R" title="R" class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" alt="SQL" title="SQL" class="skill-item">
+                <img src="https://skillicons.dev/icons?i=js" alt="JavaScript" title="JavaScript" class="skill-item">
+                <img src="https://skillicons.dev/icons?i=nodejs" alt="Node" title="Node.js" class="skill-item">
+                <img src="https://skillicons.dev/icons?i=vue" alt="Vue" title="Vue" class="skill-item">
+                <img src="https://skillicons.dev/icons?i=react" alt="React" title="React" class="skill-item">
+                <img src="https://skillicons.dev/icons?i=nextjs" alt="Next" title="Next.js" class="skill-item">
+                <img src="https://skillicons.dev/icons?i=express" alt="Express" title="Express.js" class="skill-item">
+                <img src="https://skillicons.dev/icons?i=html" alt="HTML" title="HTML" class="skill-item">
+                <img src="https://skillicons.dev/icons?i=css" alt="CSS" title="CSS" class="skill-item">
+            </div>
+            <!-- Frameworks and Libraries -->
+            <div class="skills-grid frameworks-libraries">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" alt="Pandas" title="Pandas" class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" alt="NumPy" title="NumPy" class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg" alt="Matplotlib" title="Matplotlib" class="skill-item">
+                <img src="techIcons/seaborn.svg" alt="Seaborn" title="Seaborn" class="skill-item">
+                <img src="https://skillicons.dev/icons?i=sklearn" alt="Scikit-learn" title="Scikit-learn" class="skill-item">
+                <img src="https://skillicons.dev/icons?i=tensorflow" alt="TensorFlow" title="TensorFlow" class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/keras/keras-original.svg" alt="Keras" title="Keras" class="skill-item">
+                <img src="techIcons/langchain.svg" alt="LangChain" title="LangChain" class="skill-item">
+                <img src="techIcons/n8n.svg" alt="n8n" title="n8n" class="skill-item">
+            </div>
+            <!-- Tools and Databases -->
+            <div class="skills-grid tools-databases">
+                <img src="https://skillicons.dev/icons?i=git" alt="Git" title="Git" class="skill-item">
+                <img src="https://skillicons.dev/icons?i=github" alt="GitHub" title="GitHub" class="skill-item">
+                <img src="https://skillicons.dev/icons?i=docker" alt="Docker" title="Docker" class="skill-item">
+                <img src="https://skillicons.dev/icons?i=kubernetes" alt="Kubernetes" title="Kubernetes" class="skill-item">
+                <img src="https://skillicons.dev/icons?i=postgresql" alt="PostgreSQL" title="PostgreSQL" class="skill-item">
+                <img src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB" title="MongoDB" class="skill-item">
+                <img src="https://skillicons.dev/icons?i=redis" alt="Redis" title="Redis" class="skill-item">
+                <img src="techIcons/bonsai.svg" alt="Bonsai RX" title="Bonsai RX" class="skill-item">
+                <img src="techIcons/qdrant.svg" alt="Qdrant" title="Qdrant" class="skill-item">
+                <img src="techIcons/chroma.svg" alt="ChromaDB" title="ChromaDB" class="skill-item">
+            </div>
+        </section>
+
+        <section class="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <img src="projectPic/chat.png" alt="ChatVNExpress" class="project-image">
+                    <h3>ChatVNExpress</h3>
+                    <p class="project-description">RAG chatbot that answers user queries and generates context-aware responses based on daily latest news.</p>
+                    <a href="https://github.com/mhuy26/VnExpress-RAG-ChatBot" target="_blank" rel="noopener noreferrer" class="github-btn">Github</a>
+                </div>
+                <div class="project-item">
+                    <img src="projectPic/loan.png" alt="Loan Payback" class="project-image">
+                    <h3>Loan Payback</h3>
+                    <p class="project-description">Built and trained a loan repayment classifier on a dataset of 300k+ entries to identify high-risk borrowers, achieving 89% accuracy and 100% recall on the high-risk class.</p>
+                    <a href="https://github.com/mhuy26/keras_loan" target="_blank" rel="noopener noreferrer" class="github-btn">Github</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Contact me</h2>
+            <div class="contact-links">
+                <span class="contact-link email-link">mhuyngdang@gmail.com</span>
+                <span class="contact-separator">•</span>
+                <a href="https://www.linkedin.com/in/mhuy-nguyen26/" target="_blank" rel="noopener noreferrer" class="contact-link">LinkedIn</a>
+                <span class="contact-separator">•</span>
+                <a href="https://github.com/mhuy26" target="_blank" rel="noopener noreferrer" class="contact-link">Github</a>
+            </div>
+        </section>
+    </div>
+
+    <button class="scroll-to-top" id="scrollToTop" title="Scroll to top">
+        <img src="topBot/up.svg" alt="Scroll to top" />
+    </button>
+
+    <div class="scroll-fade-indicator" id="scrollFadeIndicator"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
