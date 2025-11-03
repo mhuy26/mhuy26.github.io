@@ -4,6 +4,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const toggleIcon = document.getElementById('toggleIcon');
     const body = document.body;
 
+    // Update GitHub icons based on theme
+    function updateGitHubIcons() {
+        const githubIcons = document.querySelectorAll('.github-icon');
+        githubIcons.forEach(icon => {
+            if (body.classList.contains('dark-mode')) {
+                icon.src = 'lightDark/githubBlack.png';
+            } else {
+                icon.src = 'lightDark/githubWhite.png';
+            }
+        });
+    }
+
     // Check for saved theme preference or default to light mode
     const currentTheme = localStorage.getItem('theme') || 'light';
     
@@ -16,6 +28,9 @@ document.addEventListener('DOMContentLoaded', function() {
         toggleIcon.src = 'lightDark/dark.png';
         toggleIcon.alt = 'Toggle dark mode';
     }
+
+    // Update GitHub icons on initial load
+    updateGitHubIcons();
 
     // Toggle dark mode on button click
     darkModeToggle.addEventListener('click', function() {
@@ -30,6 +45,8 @@ document.addEventListener('DOMContentLoaded', function() {
             toggleIcon.alt = 'Toggle dark mode';
             localStorage.setItem('theme', 'light');
         }
+        
+        updateGitHubIcons();
     });
 
     // Scroll to top button functionality
@@ -74,5 +91,50 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initial check
     updateScrollFadeIndicator();
+
+    // Typing animation for "hello" in multiple languages
+    const typingElement = document.getElementById('typedText');
+    const words = ['xin chào', 'hello', '안녕하세요', '你好', 'hola', 'bonjour', 'ciao', 'こんにちは', 'guten tag', 'olá', 'привет'];
+    let wordIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let typingSpeed = 100; // milliseconds per character
+    let deletingSpeed = 50; // milliseconds per character
+    let pauseTime = 2000; // milliseconds to pause after typing
+
+    function typeText() {
+        const currentWord = words[wordIndex];
+        
+        if (isDeleting) {
+            // Delete characters
+            typingElement.textContent = currentWord.substring(0, charIndex - 1);
+            charIndex--;
+            
+            if (charIndex === 0) {
+                isDeleting = false;
+                wordIndex = (wordIndex + 1) % words.length;
+                setTimeout(typeText, 500); // Pause before typing next word
+                return;
+            }
+            
+            setTimeout(typeText, deletingSpeed);
+        } else {
+            // Type characters
+            typingElement.textContent = currentWord.substring(0, charIndex + 1);
+            charIndex++;
+            
+            if (charIndex === currentWord.length) {
+                // Finished typing, wait then start deleting
+                isDeleting = true;
+                setTimeout(typeText, pauseTime);
+                return;
+            }
+            
+            setTimeout(typeText, typingSpeed);
+        }
+    }
+
+    // Start the typing animation
+    setTimeout(typeText, 500);
 });
 
