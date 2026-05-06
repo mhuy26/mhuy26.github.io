@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>huy</title>
+    <title>huey</title>
     <link rel="icon" type="image/png" href="lightDark/nest.png">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -20,10 +20,10 @@
                         <span id="typedText"></span><span class="cursor">|</span>
                     </h1>
                     <div class="lottie-container">
-                        <video src="lightDark/typingCat.webm" autoplay loop muted playsinline></video>
+                        <video src="lightDark/catSneaking.webm" autoplay loop muted playsinline></video>
                     </div>
                 </div>
-                <p class="intro-text">i'm <strong>huy</strong>, <span class="subtitle">data science student @ utd</span></p>
+                <p class="intro-text">i'm <strong>huey</strong>, <span class="subtitle">data science student @ utd</span></p>
             </div>
         </header>
 
@@ -36,39 +36,61 @@
                         <img src="images/hsc.png" alt="Ho Chi Minh Securities Corp." class="company-logo">
                         <div class="experience-text">
                             <div class="company-row">
-                                <h3>Ho Chi Minh Securities Corp.</h3>
+                                <h3><a href="https://www.hsc.com.vn/en" target="_blank" rel="noopener noreferrer">Ho Chi Minh Securities Corp.</a></h3>
                                 <span class="date">May 2025 - Aug. 2025</span>
                             </div>
-                            <p class="job-title">Software Engineer Intern</p>
+                            <p class="job-title">AI Engineer Intern</p>
                         </div>
                     </div>
                 </div>
                 <ul class="experience-bullets">
                     <li>Built GenAI support system using query classification, prompt enhancement, and <strong>Qdrant</strong> vector retrieval to serve <strong>10 DevOps engineers</strong>, reducing repetitive tickets by <strong>25%</strong> and saving <strong>2 hours daily</strong>.</li>
                     <li>Engineered end-to-end <strong>RAG pipeline</strong> with <strong>n8n</strong> workflow orchestration, integrating <strong>Qdrant</strong> similarity search and dynamic <strong>LLM</strong> routing to process <strong>200+ daily queries</strong> at <strong>85% accuracy</strong>.</li>
-                    <li>Deployed system on <strong>Kubernetes</strong> via <strong>Helm</strong> with <strong>Prometheus/Grafana</strong> monitoring and <strong>KEDA</strong> event-driven autoscaling, maintaining <strong>98% uptime</strong> under <strong>3x peak traffic</strong>.</li>
+                    <li>Collaborated with DevOps team on Kubernetes deployment with Grafana monitoring.</li>
                 </ul>
             </div>
 
             <div class="experience-item">
                 <div class="experience-header">
                     <div class="experience-left">
-                        <img src="images/utd.jpeg" alt="Gu Lab, UTD" class="company-logo">
+                        <img src="images/utd.jpeg" alt="Ganglia Guardian Lab, UTD" class="company-logo">
                         <div class="experience-text">
                             <div class="company-row">
-                                <h3>Gu Lab, UTD Department of Neuroscience</h3>
-                                <span class="date">Jan. 2025 - May 2025</span>
+                                <h3><a href="https://labs.utdallas.edu/ganglia-guardian-lab/" target="_blank" rel="noopener noreferrer">Ganglia Guardian Lab, UTD Dept. of Neuroscience</a></h3>
+                                <span class="date">Jan. 2025 – Present</span>
                             </div>
-                            <p class="job-title">Computer Science Research Assistant</p>
+                            <p class="job-title">Undergraduate Research Assistant</p>
                         </div>
                     </div>
                 </div>
-                <ul class="experience-bullets">
-                    <li>Automated multimodal data acquisition pipelines with <strong>Bonsai RX</strong>, eliminating <strong>200+ hours</strong> of manual collection with <strong>100% signal synchronization</strong>.</li>
-                </ul>
+            
+                <!-- Role 1 (older) -->
+                <!-- <div class="role-block">
+                    <div class="company-row">
+                        <span class="date">Jan. 2025 – May 2025</span>
+                    </div>
+                    <ul class="experience-bullets">
+                        <li>Automated multimodal data acquisition pipelines with <strong>Bonsai RX</strong>, eliminating <strong>200+ hours</strong> of manual collection with <strong>100% signal synchronization</strong>.</li>
+                    </ul>
+                </div> -->
+            
+                <!-- Role 2 (latest) -->
+                <div class="role-block">
+                    <div class="company-row">
+                    </div>
+                    <ul class="experience-bullets">
+                        <li>Built end-to-end behavioral analysis pipeline in Python (NumPy, scikit-learn, <a href="https://royalsocietypublishing.org/rsif/article/11/99/20140672/35465/Mapping-the-stereotyped-behaviour-of-freely-moving" target="_blank" rel="noopener noreferrer">MotionMapperPy</a>) by integrating
+                            <a href="https://github.com/paninski-lab/lightning-pose" target="_blank" rel="noopener noreferrer">Lightning Pose</a> 
+                            keypoint detection, Ensemble Kalman Smoothing across 5 camera angles, and t-SNE clustering,
+                            reducing dimensional pose data to 2D behavioral maps that revealed 13 motion patterns in Parkinson's disease mice.</li>
+                        <li>Engineered preprocessing module applying PCA, wavelet spectrograms, and 5-frame temporal
+                            subsampling to retain pose variance while eliminating positional noise, enabling reproducible cluster
+                            comparisons across MitoPark vs. control cohorts at at early and late disease timepoints.</li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="experience-item">
+            <!-- <div class="experience-item">
                 <div class="experience-header">
                     <div class="experience-left">
                         <img src="images/finbudAI.jpeg" alt="FinBud AI" class="company-logo">
@@ -86,7 +108,7 @@
                     <li>Integrated <strong>TradingView Scanner API</strong> with color-coded price cards, KPI aggregations (avg market cap, top sectors), and deep-linked charts for instant analysis.</li>
                     <li>Optimized performance with <strong>1.2s debounced API calls</strong>, <strong>Redis 5-minute caching</strong>, pagination, and authenticated <strong>REST</strong> endpoints handling large result sets.</li>
                 </ul>
-            </div>
+            </div> -->
         </section>
 
         <section class="skills">
@@ -96,13 +118,6 @@
                 <img src="https://skillicons.dev/icons?i=python" alt="Python" title="Python" class="skill-item">
                 <img src="https://skillicons.dev/icons?i=cpp" alt="C++" title="C++" class="skill-item">
                 <img src="https://skillicons.dev/icons?i=r" alt="R" title="R" class="skill-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" alt="SQL" title="SQL" class="skill-item">
-                <img src="https://skillicons.dev/icons?i=js" alt="JavaScript" title="JavaScript" class="skill-item">
-                <img src="https://skillicons.dev/icons?i=nodejs" alt="Node" title="Node.js" class="skill-item">
-                <img src="https://skillicons.dev/icons?i=vue" alt="Vue" title="Vue" class="skill-item">
-                <img src="https://skillicons.dev/icons?i=react" alt="React" title="React" class="skill-item">
-                <img src="https://skillicons.dev/icons?i=nextjs" alt="Next" title="Next.js" class="skill-item">
-                <img src="https://skillicons.dev/icons?i=express" alt="Express" title="Express.js" class="skill-item">
                 <img src="https://skillicons.dev/icons?i=html" alt="HTML" title="HTML" class="skill-item">
                 <img src="https://skillicons.dev/icons?i=css" alt="CSS" title="CSS" class="skill-item">
             </div>
@@ -126,10 +141,8 @@
                 <img src="https://skillicons.dev/icons?i=kubernetes" alt="Kubernetes" title="Kubernetes" class="skill-item">
                 <img src="https://skillicons.dev/icons?i=postgresql" alt="PostgreSQL" title="PostgreSQL" class="skill-item">
                 <img src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB" title="MongoDB" class="skill-item">
-                <img src="https://skillicons.dev/icons?i=redis" alt="Redis" title="Redis" class="skill-item">
                 <img src="techIcons/bonsai.svg" alt="Bonsai RX" title="Bonsai RX" class="skill-item">
                 <img src="techIcons/qdrant.svg" alt="Qdrant" title="Qdrant" class="skill-item">
-                <img src="techIcons/chroma.svg" alt="ChromaDB" title="ChromaDB" class="skill-item">
             </div>
         </section>
 
@@ -140,19 +153,19 @@
                     <img src="projectPic/chat.png" alt="ChatVNExpress" class="project-image">
                     <h3>ChatVNExpress</h3>
                     <p class="project-description">RAG chatbot that answers user queries and generates context-aware responses based on daily latest news.</p>
-                    <a href="https://github.com/mhuy26/VnExpress-RAG-ChatBot" target="_blank" rel="noopener noreferrer" class="github-btn">Github <img src="lightDark/githubWhite.png" alt="GitHub" class="github-icon"></a>
+                    <a href="https://github.com/mhuy26/VnExpress-RAG-ChatBot" target="_blank" rel="noopener noreferrer" class="github-btn">Github</a>
                 </div>
                 <div class="project-item">
                     <img src="projectPic/loan.png" alt="Loan Payback" class="project-image">
                     <h3>Loan Payback</h3>
-                    <p class="project-description">Built and trained a loan repayment classifier on a dataset of 300k+ entries to identify high-risk borrowers, achieving 89% accuracy and 100% recall on the high-risk class.</p>
-                    <a href="https://github.com/mhuy26/keras_loan" target="_blank" rel="noopener noreferrer" class="github-btn">Github <img src="lightDark/githubWhite.png" alt="GitHub" class="github-icon"></a>
+                    <p class="project-description">Built and trained a feedforward neural network in Keras on 300k+ loan records to classify repayment risk, achieving 89% accuracy and 100% recall on high-risk borrowers.</p>
+                    <a href="https://github.com/mhuy26/keras_loan" target="_blank" rel="noopener noreferrer" class="github-btn">Github</a>
                 </div>
             </div>
         </section>
 
         <section class="contact">
-            <h2>Contact me</h2>
+            <h2>contact me</h2>
             <div class="contact-links">
                 <span class="contact-link email-link">mhuyngdang@gmail.com</span>
                 <span class="contact-separator">•</span>

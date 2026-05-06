@@ -7,7 +7,7 @@
     --placeholder-medium: #a0a0a0;
     --toggle-bg: #333333;
     --toggle-text: #ffffff;
-    --button-bg: #333333;
+    --button-bg: #000000;
     --button-text: #ffffff;
 }
 
@@ -146,7 +146,7 @@ h1 {
     font-size: 96px;
     font-weight: normal;
     margin-bottom: 0;
-    color: #ff10f0;
+    color: #ec4f9d;
     line-height: 1.1;
 }
 
@@ -177,7 +177,7 @@ h1 {
     display: inline-block;
     animation: blink 1s infinite;
     margin-left: 2px;
-    color: #ff10f0;
+    color: #ec4f9d;
 }
 
 @keyframes blink {
@@ -214,8 +214,22 @@ h2 {
     align-items: flex-start;
     gap: 15px;
 }
+.experience-text h3 a {
+    color: inherit;
+    text-decoration: none;
+}
 
-.company-logo {
+.experience-text h3 a:hover {
+    text-decoration: underline;
+}
+.experience-bullets a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.experience-bullets a:hover {
+    text-decoration: underline;
+}.company-logo {
     width: 60px;
     height: 60px;
     border-radius: 50%;
